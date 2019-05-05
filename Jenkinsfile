@@ -17,7 +17,9 @@ node {
     }
 }
 node {
-    input "Deploy to pre prod?"
     stage('deploy to pre prod')
+    {
+        input "Deploy to pre prod?"
     echo "deploying to pre prod"
+    }
 }
